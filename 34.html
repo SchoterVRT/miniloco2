@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta author="Henk Reuling">
+		<meta owner="Stg. De Wageningse Methode">
+		<title>Mini-loco Telproblemen klas4 wisA/C</title>
+		<script src="lib/kinetic-v5.1.0.min.js"></script>
+		<script src="lib/miniloco.js"></script>
+<style>
+#container{
+		border:solid 0px #ccc;
+		margin-top: 10px;
+	}
+div{
+		-ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+	}
+</style>
+<script>
+window.onload = function(){
+	var opgave =
+		['Bepaal telkens het aangegeven aantal',
+		"How many ways? (Sorry, only in Dutch)"];
+	var hulptekst =
+		['Gebruik kladpapier en reken-\nmachine!',
+		'Use scratch-paper and calculator'];
+	miniloco("mini-loco34",opgave,hulptekst,"thnx_to_Mijke_Campschroer.png",0);
+}; // end window.onload function();
+
+</script>
+</head>
+
+<body onmousedown="return false;">
+<table width="800px">
+	<tr>
+		<td><div id="container"></div></td>
+	</tr>
+</table>
+</body>
+</html>
