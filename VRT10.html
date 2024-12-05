@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta author="Henk Reuling">
+		<meta owner="Stg. De Wageningse Methode">
+		<title>Vindt de code om te ontsnappen</title>
+		<script src="lib/kinetic-v5.1.0.min.js"></script>
+		<script src="lib/minilocoaangepastvoorcode.js"></script>
+<style>
+#container{
+		border:solid 0px #ccc;
+		margin-top: 10px;
+	}
+div{
+		-ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+	}
+</style>
+<script>
+window.onload = function(){
+	var opgave =
+		['Schrijf zonder vermenigvuldigingsfactor.',
+		"Write without prefix"];
+	var hulptekst =
+		['Gebruik kladpapier en reken-\nmachine!',
+		'Use scratch-paper and calculator'];
+	miniloco("mini-locoVRT10",opgave,hulptekst,"auteu.png",0);
+}; // end window.onload function();
+
+</script>
+</head>
+
+<body onmousedown="return false;">
+<table width="800px">
+	<tr>
+		<td><div id="container"></div></td>
+	</tr>
+</table>
+</body>
+</html>
